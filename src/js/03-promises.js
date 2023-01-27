@@ -17,7 +17,7 @@ function OnClickBtn(e) {
 
   for (let i = 0; i < amount.value; i += 1) {
     const currentDelay = i * Number(step.value) + Number(delay.value);
-    startPromise(i, currentDelay);
+    startPromise(i + 1, currentDelay);
   }
 }
 
